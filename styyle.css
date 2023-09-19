@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+	background: #23ff01;
+     padding: 0;
+     margin: 0;
+}
+a {
+	color: #212223;
+	text-decoration:none;
+}
+h2 {
+	color: black;
+}
+.flash-button {
+	position: absolute;
+	top: 20px;
+    left: 40px;
+    background-color: #23ff01;
+    color: #212223;
+    border: 4px solid #212223; /* Added a black border */
+    border-radius: 95px; /* Rounded border */
+    padding: 10px 30px;
+    font-size: 30px;
+    font-family: "Arial";
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.bloc-info{
+	font-family:helvetica;
+	font-weight: normal;
+	font-size:13px;
+	color:white;
+	z-index:150;
+	position:fixed;
+	top:20px;
+	right:45px;
+	text-align:right;
+}
+.flash-button:hover {
+    animation: flashing 0.2s infinite;
+}
+@keyframes flashing {
+    0% {
+
+        background-color: #212223;
+        color: #23ff01;
+
+    }
+    50% {
+
+        background-color: #23ff01;
+
+        color: #212223;
+
+    }
+    100% {
+
+        background-color: #212223;
+
+        color: #23ff01;
+    }
+}
+
